@@ -10,7 +10,6 @@ Algumas dicas interessantes para utilizar na criação do seu portfólio são:
 ● Descrever quais melhorias podem ser aplicadas;
 ● Descrever as conclusões e os insights a partir dos gráfi cos e análise de base.
 
-
 ● Os 5 órgãos com maior custo total?
 ● Os 3 destinos com maior custo médio por viagem?
 ● A viagem de maior duração e seu custo total?

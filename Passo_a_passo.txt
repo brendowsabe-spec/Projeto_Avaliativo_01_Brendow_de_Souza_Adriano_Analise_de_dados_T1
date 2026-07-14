@@ -1,7 +1,7 @@
 GITHUB
 ## Depois apenas repetição dos comandos:
 * git status (para ver o que foi modificado)
-* git add -A (para adicionar todos novamente)
+* git add -A ou git add . (para adicionar todos novamente)
 * git commit -m "Mensagem" (para dar commit no github)
 * git push (para upar tudo no github)
 Prefira mensagens como “implementa X” ou “corrige Y”, em vez de “X foi implementado” ou “Y foi corrigido”.
