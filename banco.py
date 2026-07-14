@@ -1,0 +1,1 @@
+#Conexão e funções utilitárias do MySQL/PostgreSQL (conectar, executar, inserir_em_lote).

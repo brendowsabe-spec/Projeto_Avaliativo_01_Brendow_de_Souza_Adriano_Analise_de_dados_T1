@@ -1,0 +1,1 @@
+#Parâmetros + leitura do .env. Falta só você colar o DRIVE_FILE_ID.

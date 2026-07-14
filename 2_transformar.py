@@ -1,0 +1,1 @@
+#Limpeza e tipagem (Raw → Silver) + colunas calculadas.
