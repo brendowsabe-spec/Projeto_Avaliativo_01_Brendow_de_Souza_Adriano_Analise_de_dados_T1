@@ -3,18 +3,22 @@ GITHUB
 * git status (para ver o que foi modificado)
 * git add -A ou git add . (para adicionar todos novamente)
 * git commit -m "Mensagem" (para dar commit no github)
-* git push (para upar tudo no github)
+* git push -u origin main (para upar tudo no github)
 Prefira mensagens como “implementa X” ou “corrige Y”, em vez de “X foi implementado” ou “Y foi corrigido”.
 
-1. A sua missão é construir, do zero, um pipeline de dados que baixe essas informações, preservando o histórico original, limpar a estrutura e transformar os dados brutos em métricas e gráfi cos claros.
+1. A sua missão é construir, do zero, um pipeline de dados que baixe essas informações, preservando o histórico original, 
+limpar a estrutura e transformar os dados brutos em métricas e gráfi cos claros.
 
 3 RESULTADOS ESPERADOS (ENTREGA)
-Com o desafi o da construção do pipeline de dados de ponta a ponta, você irá transformar dados brutos e desorganizados do Portal da Transparência em informação confi ável para a tomada de decisão.
-Ao fi nal do projeto, você terá construído um pipeline completo que:
+● Com o desafio da construção do pipeline de dados de ponta a ponta, você irá transformar dados brutos 
+e desorganizados do Portal da Transparência em informação confi ável para a tomada de decisão.
+● Ao fi nal do projeto, você terá construído um pipeline completo que:
 ● Baixa os dados de Viagens a Serviço direto da fonte ofi cial, sem intervenção manual;
 ● Preserva o dado original fi elmente na camada Raw, garantindo rastreabilidade e auditoria de qualquer transformação futura;
-● Limpa e organiza os dados na camada Silver, com tipagem correta e integridade referencial entre as tabelas , eliminando inconsistências, duplicidades e erros de formato;
-● Responder perguntas de negócio reais na camada Gold, tudo isso apoiado por métricas e gráfi cos que tornam a informação acessível para quem for tomar decisões.
+● Limpa e organiza os dados na camada Silver, com tipagem correta e integridade referencial entre as tabelas , 
+eliminando inconsistências, duplicidades e erros de formato;
+● Responder perguntas de negócio reais na camada Gold, tudo isso apoiado por métricas e gráfi cos que tornam 
+a informação acessível para quem for tomar decisões.
 
 Boas práticas: credenciais apenas no arquivo .env (fora do código), .gitignore adequado e código organizado (PEP-8 e modularização).
 
@@ -42,7 +46,11 @@ NOTA:
 2. O repositório do projeto apresenta os arquivos (.sql, .csv, .py e README.md) estruturados conforme as instruções.
 3. Realizou a extração automatizada (download + carga), com tratamento de exceções (try/except) e sem duplicar registros em reexecuções
 4. Todos os campos estão corretamente convertidos, sem inconsistências
-5. Apresentou a criação de uma tabela agregada por meio da junção de tabelas (JOIN) e agrupamento de dados (GROUP BY), refl etindo as regras de negócio estipuladas
-6. As perguntas de negócio foram pertinentes e respondidas com análises baseadas em evidências extraídas do tratamento e visualização do conjunto de dados fornecido.
-7. As visualizações gráfi cas apresentam a identifi cação completa de seus elementos estruturais (título, eixos nomeados e legenda), refl etindo os dados extraídos do projeto.
-8. O script de criação da tabela apresenta a defi nição explícita de chaves primárias (PK), chaves estrangeiras (FK) e restrições (constraints), assegurando a integridade referencial entre as tabelas.
+5. Apresentou a criação de uma tabela agregada por meio da junção de tabelas (JOIN) e agrupamento de dados (GROUP BY), refl etindo 
+as regras de negócio estipuladas
+6. As perguntas de negócio foram pertinentes e respondidas com análises baseadas em evidências extraídas do tratamento 
+e visualização do conjunto de dados fornecido.
+7. As visualizações gráfi cas apresentam a identifi cação completa de seus elementos estruturais (título, eixos nomeados e legenda), 
+refl etindo os dados extraídos do projeto.
+8. O script de criação da tabela apresenta a defi nição explícita de chaves primárias (PK), chaves estrangeiras 
+(FK) e restrições (constraints), assegurando a integridade referencial entre as tabelas.
