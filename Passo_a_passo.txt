@@ -6,33 +6,6 @@ GITHUB
 * git push -u origin main (para upar tudo no github)
 Prefira mensagens como “implementa X” ou “corrige Y”, em vez de “X foi implementado” ou “Y foi corrigido”.
 
-1. A sua missão é construir, do zero, um pipeline de dados que baixe essas informações, preservando o histórico original, 
-limpar a estrutura e transformar os dados brutos em métricas e gráficos claros.
-
-3 RESULTADOS ESPERADOS (ENTREGA)
-● Com o desafio da construção do pipeline de dados de ponta a ponta, você irá transformar dados brutos 
-e desorganizados do Portal da Transparência em informação confi ável para a tomada de decisão.
-● Ao fi nal do projeto, você terá construído um pipeline completo que:
-● Baixa os dados de Viagens a Serviço direto da fonte ofi cial, sem intervenção manual;
-● Preserva o dado original fi elmente na camada Raw, garantindo rastreabilidade e auditoria de qualquer transformação futura;
-● Limpa e organiza os dados na camada Silver, com tipagem correta e integridade referencial entre as tabelas , 
-eliminando inconsistências, duplicidades e erros de formato;
-● Responder perguntas de negócio reais na camada Gold, tudo isso apoiado por métricas e gráfi cos que tornam 
-a informação acessível para quem for tomar decisões.
-
-Boas práticas: credenciais apenas no arquivo .env (fora do código), .gitignore adequado e código organizado (PEP-8 e modularização).
-
-5.1 FORMATO DO PIPELINE
-O projeto é um pipeline de dados em Python + MySQL/PostgreSQL, com os arquivos numerados pela ordem de execução:
-0_criar_banco.sql,
-1_extrair.py,
-2_transformar.py
-3_analise.ipynb, seguindo a Arquitetura Medallion (Raw, Silver e Gold).
-As credenciais fi cam no arquivo .env.
-
-5.6 CONVERSÕES DE TRATAMENTO DE DADOS
-Aqui você terá que desenvolver o tratamento com funções específi cas para os campos de valores e taxas( texto para decimal ) e datas ( texto para data).
-
 6 CRITÉRIOS DE AVALIAÇÃO
 NOTA:
 1. O repositório do projeto apresenta branches e commits distintos e nomeadas padronizadamente para cada funcionalidade desenvolvida. 👍
