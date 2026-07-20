@@ -7,7 +7,7 @@ GITHUB
 Prefira mensagens como “implementa X” ou “corrige Y”, em vez de “X foi implementado” ou “Y foi corrigido”.
 
 1. A sua missão é construir, do zero, um pipeline de dados que baixe essas informações, preservando o histórico original, 
-limpar a estrutura e transformar os dados brutos em métricas e gráfi cos claros.
+limpar a estrutura e transformar os dados brutos em métricas e gráficos claros.
 
 3 RESULTADOS ESPERADOS (ENTREGA)
 ● Com o desafio da construção do pipeline de dados de ponta a ponta, você irá transformar dados brutos 
@@ -33,18 +33,11 @@ As credenciais fi cam no arquivo .env.
 5.6 CONVERSÕES DE TRATAMENTO DE DADOS
 Aqui você terá que desenvolver o tratamento com funções específi cas para os campos de valores e taxas( texto para decimal ) e datas ( texto para data).
 
-5.8 USO DO GITHUB
-Utilizar um repositório GitHub para controle de versionamento do projeto. Siga as diretrizes de boas práticas de uso do Git abaixo:
-● Seguir commits com descrição sucinta e direta e, de preferência, com poucos arquivos alterados por commit.
-● Crie pastas para o versionamento do projeto, conforme explicado nas aulas.
-
 6 CRITÉRIOS DE AVALIAÇÃO
-A tabela abaixo apresenta os critérios que serão avaliados durante a correção do projeto.
-
 NOTA:
-1. O repositório do projeto apresenta branches e commits distintos e nomeadas padronizadamente para cada funcionalidade desenvolvida.
-2. O repositório do projeto apresenta os arquivos (.sql, .csv, .py e README.md) estruturados conforme as instruções.
-3. Realizou a extração automatizada (download + carga), com tratamento de exceções (try/except) e sem duplicar registros em reexecuções
+1. O repositório do projeto apresenta branches e commits distintos e nomeadas padronizadamente para cada funcionalidade desenvolvida. 👍
+2. O repositório do projeto apresenta os arquivos (.sql, .csv, .py e README.md) estruturados conforme as instruções. 👍
+3. Realizou a extração automatizada (download + carga), com tratamento de exceções (try/except) e sem duplicar registros em reexecuções 
 4. Todos os campos estão corretamente convertidos, sem inconsistências
 5. Apresentou a criação de uma tabela agregada por meio da junção de tabelas (JOIN) e agrupamento de dados (GROUP BY), refl etindo 
 as regras de negócio estipuladas

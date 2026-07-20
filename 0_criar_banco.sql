@@ -97,3 +97,156 @@ CREATE TABLE raw_trecho (
     missao VARCHAR(20)
 
 );
+
+
+CREATE TABLE silver_viagem (
+
+    id_viagem VARCHAR(50) PRIMARY KEY,
+
+    num_proposta VARCHAR(50) UNIQUE NOT NULL,
+
+    situacao VARCHAR(100) NOT NULL,
+
+    viagem_urgente BOOLEAN,
+
+    justificativa_urgencia TEXT,
+
+    cod_orgao_superior INTEGER,
+
+    nome_orgao_superior VARCHAR(255) NOT NULL,
+
+    cod_orgao_solicitante INTEGER,
+
+    nome_orgao_solicitante VARCHAR(255),
+
+    cpf_viajante VARCHAR(20),
+
+    nome_viajante VARCHAR(255),
+
+    cargo VARCHAR(255),
+
+    funcao VARCHAR(255),
+
+    descricao_funcao VARCHAR(255),
+
+    data_inicio DATE NOT NULL,
+
+    data_fim DATE NOT NULL,
+
+    destinos TEXT,
+
+    motivo TEXT,
+
+    valor_diarias NUMERIC(12,2) CHECK (valor_diarias >= 0),
+
+    valor_passagens NUMERIC(12,2) CHECK (valor_passagens >= 0),
+
+    valor_devolucao NUMERIC(12,2) CHECK (valor_devolucao >= 0),
+
+    valor_outros_gastos NUMERIC(12,2) CHECK (valor_outros_gastos >= 0)
+
+);
+
+CREATE TABLE silver_pagamento (
+
+    id_pagamento SERIAL PRIMARY KEY,
+
+    id_viagem VARCHAR(50) NOT NULL,
+
+    num_proposta VARCHAR(50) NOT NULL,
+
+    cod_orgao_superior INTEGER,
+
+    nome_orgao_superior VARCHAR(255),
+
+    cod_orgao_pagador INTEGER,
+
+    nome_orgao_pagador VARCHAR(255),
+
+    cod_ug_pagadora INTEGER,
+
+    nome_ug_pagadora VARCHAR(255),
+
+    tipo_pagamento VARCHAR(100) NOT NULL,
+
+    valor NUMERIC(12,2) NOT NULL CHECK (valor >= 0),
+
+    FOREIGN KEY (id_viagem)
+        REFERENCES silver_viagem(id_viagem)
+
+);
+
+CREATE TABLE silver_passagem (
+
+    id_passagem SERIAL PRIMARY KEY,
+
+    id_viagem VARCHAR(50) NOT NULL,
+
+    num_proposta VARCHAR(50),
+
+    meio_transporte VARCHAR(100) NOT NULL,
+
+    pais_origem_ida VARCHAR(100),
+
+    uf_origem_ida VARCHAR(10),
+
+    cidade_origem_ida VARCHAR(100),
+
+    pais_destino_ida VARCHAR(100),
+
+    uf_destino_ida VARCHAR(10),
+
+    cidade_destino_ida VARCHAR(100),
+
+    valor_passagem NUMERIC(12,2) CHECK (valor_passagem >= 0),
+
+    taxa_servico NUMERIC(12,2) CHECK (taxa_servico >= 0),
+
+    data_emissao DATE,
+
+    hora_emissao TIME,
+
+    FOREIGN KEY (id_viagem)
+        REFERENCES silver_viagem(id_viagem)
+
+);
+
+CREATE TABLE silver_trecho (
+
+    id_trecho SERIAL PRIMARY KEY,
+
+    id_viagem VARCHAR(50) NOT NULL,
+
+    num_proposta VARCHAR(50),
+
+    sequencia_trecho INTEGER NOT NULL,
+
+    origem_data DATE,
+
+    origem_pais VARCHAR(100),
+
+    origem_uf VARCHAR(10),
+
+    origem_cidade VARCHAR(100),
+
+    destino_data DATE,
+
+    destino_pais VARCHAR(100),
+
+    destino_uf VARCHAR(10),
+
+    destino_cidade VARCHAR(100),
+
+    meio_transporte VARCHAR(100),
+
+    numero_diarias NUMERIC(10,2)
+        CHECK (numero_diarias >= 0),
+
+    missao BOOLEAN,
+
+    UNIQUE (id_viagem, sequencia_trecho),
+
+    FOREIGN KEY (id_viagem)
+        REFERENCES silver_viagem(id_viagem)
+
+);
