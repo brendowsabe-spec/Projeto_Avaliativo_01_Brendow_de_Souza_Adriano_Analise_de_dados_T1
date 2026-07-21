@@ -1,3 +1,11 @@
+Olá!
+
+Seja bem-vindo(a) à minha atividade para o curso de análise de dados do SCTEC.
+
+Me chamo brendow e estou iniciando nesta área, ainda tenho muito a aprender, o que eu pude inclui nesta atividade para demonstrar um pouco do que aprendi e também coisas que ainda preciso melhorar!
+
+Sobre o Projeto: Pipeline de dados ETL utilizando Arquitetura Medallion (Raw, Silver, Gold) para o Portal da Transparência (Ano 2025).
+
 documentar a sua solução
 - Solução iniciada com a criação de todos os arquivos necessários para iniciar, python, postgreSQL, arquivos como .env, e todas as modulações necessárias que se encontram no requirements.txt.
 demonstrar as técnicas e linguagens utilizadas
@@ -18,18 +26,3 @@ Pode ser executado pelo terminal do VS Code com python, executando na ordem: 0_c
 ● Descrever quais melhorias podem ser aplicadas;
 - Durante o carregamento dos dados para a camada Raw, foram identificadas colunas com textos superiores ao tamanho definido inicialmente. Para evitar perda de informação, alguns campos foram alterados para o tipo TEXT, permitindo armazenar os dados originais sem truncamento.
 ● Descrever as conclusões e os insights a partir dos gráfi cos e análise de base.
-
-
-● Os 5 órgãos com maior custo total?
-
-● Os 3 destinos com maior custo médio por viagem?
-
-● A viagem de maior duração e seu custo total?
-
-● Qual o tipo de pagamento com maior valor médio?
-
-● Qual o meio de transporte mais usado nos trechos?
-
-● Qual UF de destino aparece em mais trechos?
-
-● Qual órgão pagou mais no total ?
