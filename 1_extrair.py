@@ -1,3 +1,6 @@
+# baixar o arquivo .zip do Google Drive, ler os 4 CSVs em blocos e carregar nas tabelas Raw sem alterar o conteúdo. 
+# O processo deve ser idempotente (TRUNCATE antes de carregar) e resiliente (try/except).
+
 import pandas as pd
 
 from banco import obter_engine
@@ -50,61 +53,61 @@ def carregar_csv(arquivo, tabela, colunas):
 # VIAGEM
 # ==========================
 
-# carregar_csv(
+carregar_csv(
 
-#     "2025_Viagem.csv",
+    "2025_Viagem.csv",
 
-#     "raw_viagem",
+    "raw_viagem",
 
-#     [
-#         "id_viagem",
-#         "num_proposta",
-#         "situacao",
-#         "viagem_urgente",
-#         "justificativa_urgencia",
-#         "cod_orgao_superior",
-#         "nome_orgao_superior",
-#         "cod_orgao_solicitante",
-#         "nome_orgao_solicitante",
-#         "cpf_viajante",
-#         "nome_viajante",
-#         "cargo",
-#         "funcao",
-#         "descricao_funcao",
-#         "data_inicio",
-#         "data_fim",
-#         "destinos",
-#         "motivo",
-#         "valor_diarias",
-#         "valor_passagens",
-#         "valor_devolucao",
-#         "valor_outros_gastos"
-#     ]
-# )
+    [
+        "id_viagem",
+        "num_proposta",
+        "situacao",
+        "viagem_urgente",
+        "justificativa_urgencia",
+        "cod_orgao_superior",
+        "nome_orgao_superior",
+        "cod_orgao_solicitante",
+        "nome_orgao_solicitante",
+        "cpf_viajante",
+        "nome_viajante",
+        "cargo",
+        "funcao",
+        "descricao_funcao",
+        "data_inicio",
+        "data_fim",
+        "destinos",
+        "motivo",
+        "valor_diarias",
+        "valor_passagens",
+        "valor_devolucao",
+        "valor_outros_gastos"
+    ]
+)
 
-# # ==========================
-# # PAGAMENTO
-# # ==========================
+# ==========================
+# PAGAMENTO
+# ==========================
 
-# carregar_csv(
+carregar_csv(
 
-#     "2025_Pagamento.csv",
+    "2025_Pagamento.csv",
 
-#     "raw_pagamento",
+    "raw_pagamento",
 
-#     [
-#         "id_viagem",
-#         "num_proposta",
-#         "cod_orgao_superior",
-#         "nome_orgao_superior",
-#         "cod_orgao_pagador",
-#         "nome_orgao_pagador",
-#         "cod_ug_pagadora",
-#         "nome_ug_pagadora",
-#         "tipo_pagamento",
-#         "valor"
-#     ]
-# )
+    [
+        "id_viagem",
+        "num_proposta",
+        "cod_orgao_superior",
+        "nome_orgao_superior",
+        "cod_orgao_pagador",
+        "nome_orgao_pagador",
+        "cod_ug_pagadora",
+        "nome_ug_pagadora",
+        "tipo_pagamento",
+        "valor"
+    ]
+)
 
 # ==========================
 # PASSAGEM

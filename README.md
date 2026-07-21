@@ -9,11 +9,12 @@ como o usuário pode executar o seu sistema.
 
 Algumas dicas interessantes para utilizar na criação do seu portfólio são:
 ● Descrever qual o problema ele resolve;
-- Resolve a questão de encontrar dados sujos de arquivos de viagens aéreas.
+- Organização e tratamento de dados de viagens do Portal da Transparência de 2025 para apoio à tomada de decisão.
 ● Descrever quais técnicas e tecnologias utilizadas. Aqui você também pode inserir alguma imagem ou diagrama para melhor entendimento;
 - Desenvolvi técnicas aprendidas em aula sobre Análise de dados com python e SQL, colocando em foco encontrar os dados sujos e os guardar em um banco, depois os limpar para chegar mais proximo dos dados reais (silver) e por ultimo fazer analise mais aprofundada de cada dado (gold)
+* Portanto utilizado ao fim: Python (Pandas, SQLAlchemy), PostgreSQL e Jupyter Notebook.
 ● Descrever como executar;
-Pode ser executado pelo terminal do VS Code com python, pelo arquivo 3_analise.ipynb
+Pode ser executado pelo terminal do VS Code com python, executando na ordem: 0_criar_banco.sql, depois 1_extrair.py, em seguida 2_transformar.py, e por fim explorar o 3_analise.ipynb.
 ● Descrever quais melhorias podem ser aplicadas;
 - Durante o carregamento dos dados para a camada Raw, foram identificadas colunas com textos superiores ao tamanho definido inicialmente. Para evitar perda de informação, alguns campos foram alterados para o tipo TEXT, permitindo armazenar os dados originais sem truncamento.
 ● Descrever as conclusões e os insights a partir dos gráfi cos e análise de base.
