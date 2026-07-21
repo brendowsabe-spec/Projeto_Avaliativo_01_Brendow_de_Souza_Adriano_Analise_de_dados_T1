@@ -15,6 +15,7 @@ Algumas dicas interessantes para utilizar na criação do seu portfólio são:
 ● Descrever como executar;
 Pode ser executado pelo terminal do VS Code com python, pelo arquivo 3_analise.ipynb
 ● Descrever quais melhorias podem ser aplicadas;
+- Durante o carregamento dos dados para a camada Raw, foram identificadas colunas com textos superiores ao tamanho definido inicialmente. Para evitar perda de informação, alguns campos foram alterados para o tipo TEXT, permitindo armazenar os dados originais sem truncamento.
 ● Descrever as conclusões e os insights a partir dos gráfi cos e análise de base.
 
 
